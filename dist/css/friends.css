@@ -1,0 +1,237 @@
+@charset "UTF-8";
+.play-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  color: #fff;
+  background-color: #19C816;
+  padding: 0.3em 1.4em 0.3em 1.4em;
+  border: none;
+  margin-top: 3em;
+  box-shadow: 0.6rem 0.6rem #17B514, 1.2rem 1.2rem #0E770B; }
+
+.logOut-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  color: #fff;
+  background-color: #FF0000;
+  padding: 0.45em 2em 0.45em 2em;
+  border: none;
+  box-shadow: 0.6rem 0.4rem #920000, 1.1rem 0.7rem #430000; }
+
+.logOut-btn::after {
+  content: "";
+  display: inline-block;
+  width: 5rem;
+  height: 2.4rem;
+  background: url(/img/arrow.svg);
+  vertical-align: top;
+  margin-left: 0.5em; }
+
+.confirm-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: #fff;
+  background-color: #19C816;
+  padding: 0.30555em 1.02777em 0.30555em 1.3611em;
+  border: none;
+  box-shadow: 0.6rem 0.6rem #17b514, 1.2rem 1.2rem #0e770b; }
+
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  background-color: #144B77; }
+
+.header {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.page-header {
+  font-family: 'Inter', sans-serif;
+  font-size: 6.4rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0.609375em 0rem 0.609375em 0em; }
+
+.main {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+.search {
+  width: 100%;
+  max-width: 82.9rem;
+  height: 5.8rem;
+  background: #185687;
+  border: none;
+  box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 3.2rem;
+  padding: 0em 1em;
+  margin-bottom: .5625em; }
+
+.search::placeholder {
+  font-size: 3.2rem;
+  color: #fff; }
+
+.friend_buttons {
+  max-width: 44rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8em; }
+
+.all-btn {
+  font-size: 3.2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  padding: .09375em .375em .21875em .375em; }
+
+.all-btn:focus {
+  background: #175382;
+  border-radius: 1rem;
+  vertical-align: middle; }
+
+.addToFriends-btn {
+  font-size: 3.2rem;
+  color: #fff;
+  padding: .09375em .625em .125em .625em;
+  background: #188737;
+  border-radius: 1rem;
+  border: none; }
+
+.friends {
+  width: 82.9rem;
+  height: 55.6rem;
+  background: #185687; }
+
+.list-friends, .add-friends {
+  display: none;
+  padding: 1.6em 2.7em;
+  animation-name: animate;
+  animation-duration: .4s; }
+  .list-friends__title, .add-friends__title {
+    font-size: 3.6rem;
+    color: #fff;
+    margin-bottom: .91666em; }
+
+@keyframes animate {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em .7em;
+  background: rgba(217, 217, 217, 0.12);
+  box-shadow: 0rem 0.8rem 1rem rgba(0, 0, 0, 0.25); }
+
+.profil-friend {
+  display: flex;
+  align-items: center; }
+
+.list-friends__content {
+  list-style: none;
+  padding: 0; }
+
+.player__avatar {
+  margin: 0em 1.2em 0em 0em; }
+
+.NickName {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0em 0em .3em 0em; }
+
+.player-data__active {
+  font-size: 1.4rem;
+  color: #fff; }
+
+.player-data__active::before {
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-image: url(/img/active-online.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0em .6em 0em 0em; }
+
+.section-friend {
+  width: 3.6rem;
+  height: 3.6rem;
+  background: url(/img/section-friend.png); }
+
+.applications {
+  max-width: 32.1rem;
+  background: #185687;
+  padding: 1em 2.2em; }
+
+.title {
+  background: #144B77;
+  margin-bottom: 2.1em; }
+  .title__content {
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+    padding: .5em 1.60714em .53571em 1.60714em;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #fff; }
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.player-data__name {
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  color: #fff; }
+
+.add-btn, .cancellation-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none; }
+
+.add-btn {
+  background: url(/img/Добавить.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 1em; }
+
+.cancellation-btn {
+  background: url(/img/Отклонить.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.add-friends__search {
+  width: 100%;
+  max-width: 775px;
+  height: 5rem;
+  background: #09436D;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 0em 1em;
+  margin-bottom: 33px;
+  border: none; }
+
+.add-friends__search::placeholder {
+  font-size: 2.4rem;
+  color: #fff; }
+
+/*# sourceMappingURL=friends.css.map */

@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #175A8F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.sign-Up {
+  width: 46rem;
+  padding: 4em 5.5em;
+  background: #1477C6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  background: url(/img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4.5em;
+}
+
+.form-content {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-content__input {
+  font-size: 1.8rem;
+  width: 35rem;
+  padding: 1.1em 1em;
+  margin-bottom: 3em;
+  border-radius: 5px;
+  border: none;
+}
+.form-content__input:focus {
+  outline: none;
+}
+.form-content__btn {
+  border-radius: 0px;
+  color: #FFFDFD;
+  background-color: #317DB9;
+  box-shadow: 6px 6px 0px #1E5283, 11px 11px 0px #29698D;
+  cursor: pointer;
+}
+.form-content__link {
+  text-align: center;
+  text-decoration: none;
+  color: #FFFDFD;
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=signIn.css.map */

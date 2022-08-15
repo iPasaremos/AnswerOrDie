@@ -1,0 +1,117 @@
+.play-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  color: #fff;
+  background-color: #19C816;
+  padding: 0.3em 1.4em 0.3em 1.4em;
+  border: none;
+  margin-top: 3em;
+  box-shadow: 0.6rem 0.6rem #17B514, 1.2rem 1.2rem #0E770B;
+}
+
+.logOut-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  color: #fff;
+  background-color: #FF0000;
+  padding: 0.45em 2em 0.45em 2em;
+  border: none;
+  box-shadow: 0.6rem 0.4rem #920000, 1.1rem 0.7rem #430000;
+}
+
+.logOut-btn::after {
+  content: "";
+  display: inline-block;
+  width: 5rem;
+  height: 2.4rem;
+  background: url(/img/arrow.svg);
+  vertical-align: top;
+  margin-left: 0.5em;
+}
+
+.confirm-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: #fff;
+  background-color: #19C816;
+  padding: 0.30555em 1.02777em 0.30555em 1.3611em;
+  border: none;
+  box-shadow: 0.6rem 0.6rem #17b514, 1.2rem 1.2rem #0e770b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #144B77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.log-In {
+  width: 46rem;
+  padding: 4em 5.5em;
+  background: #1477C6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  background: url(/img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4.5em;
+}
+
+.form-content {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-content__input {
+  font-size: 1.8rem;
+  width: 35rem;
+  padding: 1.1em 1em;
+  margin-bottom: 3em;
+  border-radius: 5px;
+  border: none;
+}
+.form-content__input:focus {
+  outline: none;
+}
+.form-content__btn {
+  border-radius: 0px;
+  color: #FFFDFD;
+  background-color: #317DB9;
+  box-shadow: 6px 6px 0px #1E5283, 11px 11px 0px #29698D;
+  cursor: pointer;
+}
+.form-content__link {
+  text-align: center;
+  text-decoration: none;
+  color: #FFFDFD;
+  font-size: 1.6rem;
+  margin-bottom: 1em;
+}
+
+/*# sourceMappingURL=logIn.css.map */

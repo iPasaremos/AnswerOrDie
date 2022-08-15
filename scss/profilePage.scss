@@ -1,0 +1,156 @@
+@import 'buttons.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #144B77;
+}
+
+.header{
+    max-width: 124rem;
+    @include flexible;
+    align-items: center;
+    margin: 10.2em auto 0 auto;
+}
+
+.player-data{
+    display: flex;
+    align-items: center;
+
+    &__avatar{
+        width: 16.6rem;
+        height: 16.6rem;
+        margin-right: 5.3em;
+
+        &__img{
+            width: 16rem;
+            height: 16rem;
+        }
+    }
+
+    &__NickName{
+        font-family: $main-font;
+        font-size: 3.6rem;
+        color: $main-text-color;
+    }
+
+    &__id{
+        font-family: $main-font;
+        font-size: 3.2rem;
+        color: $main-text-color;
+        margin-top: 0.65em;
+    }
+}
+
+.main{
+    max-width: 124rem;
+    margin: 3.5em auto 0 auto;
+    padding-bottom: 10rem;
+}
+
+.inGameTime{
+    background-color: $section-background-color;
+    @include flexible;
+
+    &__total{
+        font-family: $main-font;
+        font-size: 4rem;
+        color: $main-text-color;
+        margin-left: 1.1em;
+    }
+
+    &__time{
+        font-family: $main-font;
+        font-size: 4rem;
+        color: $main-text-color;
+        margin-right: 1.1em;
+    }
+}
+
+.gameStats{
+    background-color: $section-background-color;
+    margin-top: 5em;
+
+    &__content{
+        @include flexible;
+        padding: 4.2em 8em 5em 8em;
+    }
+
+    &__item{
+        text-align: center;
+    }
+
+    &__title{
+        font-family: $main-font;
+        font-size: 3.6rem;
+        color: $main-text-color;
+    }
+
+    &__amount{
+        font-family: $main-font;
+        font-size: 6.4rem;
+        color: $main-text-color;
+        margin-top: 0.39em;
+    }
+}
+
+.rankProgress{
+    background-color: $section-background-color;
+    margin-top: 5em;
+
+    &__content{
+        display: flex;
+        padding: 3.2em 40.4em 3.2em 40.4em;
+    }
+}
+
+.rank-stats{
+    display: flex;
+    &__name{
+        font-family: $main-font;
+        font-size: 3.2rem;
+        color: $main-text-color;
+    }
+    &__progress{
+        font-family: $main-font;
+        font-size: 3.2rem;
+        color: $main-text-color;
+    }
+}
+
+.friends{
+    text-align: center;
+    background-color: $section-background-color;
+    margin-top: 5em;
+
+    &__title{
+        font-family: $main-font;
+        font-size: 6.4rem;
+        font-weight: 400;
+        color: $main-text-color;
+        padding-top: 0.26em;
+    }
+
+    &__content{
+        display: flex;
+    }
+
+    &__item{
+        margin: 0 auto;
+        &__img{
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+}

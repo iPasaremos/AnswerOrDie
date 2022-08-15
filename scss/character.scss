@@ -1,0 +1,122 @@
+@import 'buttons.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: $main-background-color;
+}
+
+
+
+
+
+/* Стрелки */
+
+
+
+
+.main {
+    // width: 100%;
+    max-width: 115.5rem;
+    margin: 0 auto;
+    // border: 1px solid red;
+}
+
+.page-header {
+   @include page-title;
+    text-align: center;
+    margin: 0.3125em 0em 1.046875em 0em;
+}
+
+.skin-selection {
+    max-width: 115.5rem;
+    @include flexible;
+    align-items: center;
+}
+
+
+.skin-list {
+    max-width: 52.8rem;
+    max-height: 62rem;
+    background: #0077E7;
+    padding: 1.4em 3em ;
+    &__content {
+        max-width: 46.8rem;
+        max-height: 59.2rem;
+        background: $main-background-color;
+        padding: 2.7em .4em 2.7em 2em;  
+    }
+/* полоса прокрутки (скроллбар) */
+    &__scroll-bar {
+        max-width: 44.4rem;
+        max-height: 53.8rem;
+        @include flexible;
+        flex-wrap: wrap;
+        overflow: auto ;
+        padding: 0em .4em 0em 0em;
+    }
+
+    &__scroll-bar::-webkit-scrollbar {
+        width: 1rem; /* ширина для вертикального скролла */
+        background-color: #175A8F;
+        // scrollbar-width: 100px;
+    }
+    /* ползунок скроллбара */
+    &__scroll-bar::-webkit-scrollbar-thumb {
+        background-color: #0E3F66;
+        // box-shadow: inset 1px 1px 10px #f3faf7;
+    }
+    
+    &__scroll-bar::-webkit-scrollbar-thumb:hover {
+        background-color: #253861;
+    }
+
+    &__scroll-bar::-webkit-scrollbar-button:vertical:start:decrement {
+        background: linear-gradient(120deg, #175A8F 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(240deg, #175A8F 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(0deg, #175A8F 30%, rgba(0, 0, 0, 0) 31%);
+        background-color:$main-background-color ;
+    }
+    
+    &__scroll-bar::-webkit-scrollbar-button:vertical:end:increment {
+        background:
+            linear-gradient(300deg, #175A8F 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(60deg, #175A8F 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(180deg, #175A8F 30%, rgba(0, 0, 0, 0) 31%);
+        background-color:$main-background-color;
+    }
+    
+
+    &__item {
+        background: #D9D9D9;
+        padding: 2.7em 3em 2.6em 2.5em;
+    }
+
+}
+
+.item {
+    margin: 1.9em 0;
+}
+
+
+
+
+.confirm {
+    display: flex;
+    flex-direction: row-reverse;
+    margin:4em 7.3em 5.1em 0;
+}
+
+
+.confirm-btn:active {
+    box-shadow: none;
+}

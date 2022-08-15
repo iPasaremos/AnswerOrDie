@@ -1,0 +1,10 @@
+@mixin page-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 6.4rem;
+    font-weight: 400;
+    color: #fff;
+}
+@mixin flexible {
+    display: flex;
+    justify-content: space-between;
+}

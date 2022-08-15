@@ -1,0 +1,156 @@
+.play-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  color: #fff;
+  background-color: #19C816;
+  padding: 0.3em 1.4em 0.3em 1.4em;
+  border: none;
+  margin-top: 3em;
+  box-shadow: 0.6rem 0.6rem #17B514, 1.2rem 1.2rem #0E770B; }
+
+.logOut-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  color: #fff;
+  background-color: #FF0000;
+  padding: 0.45em 2em 0.45em 2em;
+  border: none;
+  box-shadow: 0.6rem 0.4rem #920000, 1.1rem 0.7rem #430000; }
+
+.logOut-btn::after {
+  content: "";
+  display: inline-block;
+  width: 5rem;
+  height: 2.4rem;
+  background: url(/img/arrow.svg);
+  vertical-align: top;
+  margin-left: 0.5em; }
+
+.confirm-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: #fff;
+  background-color: #19C816;
+  padding: 0.30555em 1.02777em 0.30555em 1.3611em;
+  border: none;
+  box-shadow: 0.6rem 0.6rem #17b514, 1.2rem 1.2rem #0e770b; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  background-color: #144B77; }
+
+.header {
+  max-width: 124rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10.2em auto 0 auto; }
+
+.player-data {
+  display: flex;
+  align-items: center; }
+  .player-data__avatar {
+    width: 16.6rem;
+    height: 16.6rem;
+    margin-right: 5.3em; }
+    .player-data__avatar__img {
+      width: 16rem;
+      height: 16rem; }
+  .player-data__NickName {
+    font-family: "Inter", sans-serif;
+    font-size: 3.6rem;
+    color: #fff; }
+  .player-data__id {
+    font-family: "Inter", sans-serif;
+    font-size: 3.2rem;
+    color: #fff;
+    margin-top: 0.65em; }
+
+.main {
+  max-width: 124rem;
+  margin: 3.5em auto 0 auto;
+  padding-bottom: 10rem; }
+
+.inGameTime {
+  background-color: #185687;
+  display: flex;
+  justify-content: space-between; }
+  .inGameTime__total {
+    font-family: "Inter", sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    margin-left: 1.1em; }
+  .inGameTime__time {
+    font-family: "Inter", sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    margin-right: 1.1em; }
+
+.gameStats {
+  background-color: #185687;
+  margin-top: 5em; }
+  .gameStats__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.2em 8em 5em 8em; }
+  .gameStats__item {
+    text-align: center; }
+  .gameStats__title {
+    font-family: "Inter", sans-serif;
+    font-size: 3.6rem;
+    color: #fff; }
+  .gameStats__amount {
+    font-family: "Inter", sans-serif;
+    font-size: 6.4rem;
+    color: #fff;
+    margin-top: 0.39em; }
+
+.rankProgress {
+  background-color: #185687;
+  margin-top: 5em; }
+  .rankProgress__content {
+    display: flex;
+    padding: 3.2em 40.4em 3.2em 40.4em; }
+
+.rank-stats {
+  display: flex; }
+  .rank-stats__name {
+    font-family: "Inter", sans-serif;
+    font-size: 3.2rem;
+    color: #fff; }
+  .rank-stats__progress {
+    font-family: "Inter", sans-serif;
+    font-size: 3.2rem;
+    color: #fff; }
+
+.friends {
+  text-align: center;
+  background-color: #185687;
+  margin-top: 5em; }
+  .friends__title {
+    font-family: "Inter", sans-serif;
+    font-size: 6.4rem;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 0.26em; }
+  .friends__content {
+    display: flex; }
+  .friends__item {
+    margin: 0 auto; }
+    .friends__item__img {
+      width: 15rem;
+      height: 15rem; }
+
+/*# sourceMappingURL=profilePage.css.map */

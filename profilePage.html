@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/profilePage.css">
+    <link rel="stylesheet" href="dist/css/general.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" class="link">
+        <div class="link__back"></div>
+    </a>
+    <header class="header">
+        <div class="player-data">
+            <div class="player-data__avatar">
+                <img class="player-data__avatar__img" src="img/ava 1.png" alt="">
+            </div>
+            <div class="player-data__content">
+                <p class="player-data__NickName">Z1mniy</p>
+                <p class="player-data__id">id: 1234567</p>
+            </div>
+        </div>
+        <a href="" class="addToFriend">
+            <img src="img/button-add-in-friends.svg" alt="">
+        </a>
+    </header>
+    <main class="main">
+        <section class="inGameTime">
+            <p class="inGameTime__total">Всего</p>
+            <p class="inGameTime__time">0 часов</p>
+        </section>
+
+        <section class="gameStats">
+            <div class="gameStats__content">
+                <div class="gameStats__item" >
+                    <p class="gameStats__title">Победы</p>
+                    <p class="gameStats__amount" id="win">12</p>
+                </div>
+                <div class="gameStats__item" >
+                    <p class="gameStats__title">Поражения</p>
+                    <p class="gameStats__amount" id="defeat">17</p>
+                </div>
+                <div class="gameStats__item" id="draws">
+                    <p class="gameStats__title">Ничьи</p>
+                    <p class="gameStats__amount" id="draws">0</p>
+                </div>
+                <div class="gameStats__item" >
+                    <p class="gameStats__title">% Побед</p>
+                    <p class="gameStats__amount" id="winRate">43.6%</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rankProgress">
+            <div class="rankProgress__content">
+                <div class="rank">
+                    <img src="img/profile-rank.svg" alt="">
+                </div>
+                <div class="rank-stats">
+                    <p class="rank-stats__name">новичок I</p>
+                    <p class="rank-stats__progress">25/100</p>
+                </div>
+                <div class="progress-bar"></div>
+            </div>
+        </section>
+
+        <section class="friends">
+            <h2 class="friends__title">Друзья</h2>
+            <div class="friends__content">
+                <div class="friends__item">
+                    <img class="friends__item__img" src="img/player_avatar.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

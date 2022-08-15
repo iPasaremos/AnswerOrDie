@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/friends.css">
+    <link rel="stylesheet" href="dist/css/general.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" class="link">
+        <div class="link__back"></div>
+    </a>
+    <header class="header">
+        <h2 class="page-header">Друзья</h2>
+    </header>
+    <main class="main">
+        <div class="main__content">
+            <input type="search" class="search" placeholder="Найти друзей...">
+    
+            <div class="friend_buttons">
+                <button  onclick="listFriends()"  class="all-btn btn-option active">Все</button>
+                <button   onclick="addFriends()"  class="addToFriends-btn btn-option">Добавить в друзья</button>
+            </div>
+
+            <div class="friends">
+            <div class="list-friends" id="list-friends">
+                <ul class="list-friends__content">
+                    <li class="friend">
+                        <div class="profil-friend">
+                            <div class="player__avatar">    
+                                <img src="img/player-avatar.png" alt="avatar">
+                            </div>
+                            <div class="player-data__name">
+                                <p class="NickName">Farshmak</p>
+                                <p class="player-data__active">Онлайн</p>
+                            </div>
+                        </div>
+                        <div class="section-friend"></div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="add-friends" id="add-friends">
+                <h3 class="add-friends__title">Добавить в друзья</h3>
+                <input type="search" class="add-friends__search" placeholder="Введите индетефикатор друга#32DGv">
+                <div class="friend">
+                    <div class="profil-friend">
+                        <div class="player__avatar">    
+                            <img src="img/player-avatar.png" alt="avatar">
+                        </div>
+                        <div class="player-data__name">
+                            <p class="NickName">Farshmak</p>
+                            <p class="player-data__active">Онлайн</p>
+                        </div>
+                    </div>
+                    <div class="add-btn"></div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+        <aside class="applications">
+            <div class="title">
+                <p class="title__content">Заявки в друзья</p>
+            </div>
+            <div class="player">
+                <div class="profil-friend">
+                    <div class="player__avatar"><img src="img/player-avatar-two.png" alt=""></div>
+                    <div class="player-data__name">Хермип</div>
+                </div>
+                <div class="option-btns">
+                    <button class="add-btn"></button>
+                    <button class="cancellation-btn"></button>
+                </div> 
+            </div>
+        </aside>
+    
+    </main>
+
+    <script src="js/friends.js"></script>
+</body>
+</html>

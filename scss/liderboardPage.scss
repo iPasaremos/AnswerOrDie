@@ -1,0 +1,119 @@
+@import 'buttons.scss';
+@import 'mixin.scss';
+@import 'variables.scss';
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: $main-background-color;
+}
+
+.header{
+    max-width: 144rem;
+   @include flexible;
+    margin: 5.1em auto 0 auto;
+
+    &__title{
+   @include page-title;
+    }
+}
+
+
+.main{
+    margin-top: 1.4em;
+}
+.content{
+    max-width: 144rem;
+    height: 57rem;
+    overflow-y: auto;
+    padding-right: 1.1em;
+    margin: 0 auto;
+}
+
+.content::-webkit-scrollbar{
+    width: 2.1rem;
+    background-color: #0E3F66;
+}
+
+.content::-webkit-scrollbar-thumb{
+    width: 1.7rem;
+    background:#175A8F;
+    border: 0.2rem solid #0E3F66;
+}
+
+.content::-webkit-scrollbar-button:vertical:start:decrement{
+    background: linear-gradient(120deg, #0E3F66 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(240deg, #0E3F66 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(0deg, #0E3F66 30%, rgba(0, 0, 0, 0) 31%);
+    background-color:#175A8F;
+}
+
+.content::-webkit-scrollbar-button:vertical:end:increment{
+    background:
+        linear-gradient(300deg, #0E3F66 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #0E3F66 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #0E3F66 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #175A8F;
+}
+
+.list-item{
+    background-color: $list-background-color;
+    margin-bottom: 1em;
+
+    &__content{
+        @include flexible;
+        align-items: flex-end;
+        padding: 1.5em 6em 1.5em 6em;
+    }
+}
+
+.player{
+    background-color: #0077E7;
+
+    &__content{
+        max-width: 128.8rem;
+        @include flexible;
+        align-items: flex-end; 
+        padding: 3.1em 0 3.1em 0;
+        margin: 0 0 0 29.2em;
+    }
+}
+
+.player-data{
+    margin-left: -40em;
+    &__name{
+        font-family: $main-font;
+        font-size: 2.4rem;
+        color: $main-text-color;
+        margin-bottom: 0.25em;
+    }
+
+    &__id{
+        font-family: $main-font;
+        font-size: 2.4rem;
+        color: $main-text-color;
+    }
+}
+
+.amount-xp{
+    font-family: $main-font;
+    font-size: 4.8rem;
+    color: $main-text-color;
+}
+
+.place{
+    font-family: $main-font;
+    font-size: 3.6rem;
+    color: $main-text-color;
+    margin: auto 0;
+}

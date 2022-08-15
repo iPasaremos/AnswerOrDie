@@ -1,0 +1,15 @@
+
+.link {
+
+    position: absolute;
+    top:3em;
+    left:3.3em;
+
+    &__back {
+    width: 6.7rem;
+    height: 4.3rem;
+    background: url(/img/back-button.svg);
+    }   
+
+}
+

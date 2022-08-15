@@ -1,0 +1,72 @@
+@import 'buttons.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: $main-background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.log-In{
+    width: 46rem;
+    padding: 4em 5.5em;
+    background: #1477C6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+.logo{
+    width: 10rem;
+    height: 10rem;
+    background: url(/img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 4.5em    ;
+}
+.form-content{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__input{
+        font-size: 1.8rem;
+        width: 35rem;
+        padding: 1.1em 1em;
+        margin-bottom: 3em;
+        border-radius: 5px;
+        border: none;
+    }
+    &__input:focus{
+        outline: none;
+    }
+    &__btn{
+        border-radius: 0px;
+        color: #FFFDFD;
+        background-color: #317DB9;
+        box-shadow: 6px 6px 0px #1E5283,
+                    11px 11px 0px #29698D;
+        cursor: pointer;
+    }
+    &__link{
+        text-align: center;
+        text-decoration: none;
+        color: #FFFDFD;
+        font-size: 1.6rem;
+        margin-bottom: 1em;
+    }
+}
+
